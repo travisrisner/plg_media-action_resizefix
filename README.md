@@ -20,7 +20,6 @@ A Joomla 4 plugin that serves as a **bugfix override** for the core `plg_media-a
 - Backports the Joomla 5.3 fix for media image resizing.
 - Fully standalone — avoids overwriting Joomla core plugins if installed properly.
 - Uses PSR-4 autoloading (`Joomla\Plugin\MediaAction\Resizefix`).
-- Language support via `en-GB` `.ini` files.
 
 ---
 
