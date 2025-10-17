@@ -10,8 +10,8 @@
 
 namespace Joomla\Plugin\MediaAction\Resizefix\Extension;
 
-use Joomla\CMS\Image\Image;
-use Joomla\Component\Media\Administrator\Plugin\MediaActionPlugin;
+use \Joomla\Component\Media\Administrator\Plugin\MediaActionPlugin;
+use \Joomla\CMS\Image\Image;
 
 // phpcs:disable PSR1.Files.SideEffects
 \defined('_JEXEC') or die;
@@ -23,6 +23,7 @@ use Joomla\Component\Media\Administrator\Plugin\MediaActionPlugin;
  * @since  4.0.0
  */
 final class Resizefix extends MediaActionPlugin {
+
     /**
      * The save event.
      *
