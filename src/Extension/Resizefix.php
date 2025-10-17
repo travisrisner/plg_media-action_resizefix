@@ -36,8 +36,7 @@ final class Resizefix extends MediaActionPlugin {
      *
      * @since   4.0.0
      */
-    public function onContentBeforeSave($context, $item, $isNew, $data = []):void
-    {
+    public function onContentBeforeSave($context, $item, $isNew, $data = []):void {
         if ($context != 'com_media.file') {
             return;
         }
