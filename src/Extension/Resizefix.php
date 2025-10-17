@@ -2,9 +2,9 @@
 
 /**
  * @package     Joomla.Plugin
- * @subpackage  Media-Action.resize
+ * @subpackage  Media-Action.resizefix
  *
- * @copyright   (C) 2017 Open Source Matters, Inc. <https://www.joomla.org>
+ * @copyright   (C) 2025 Travis Risner. All Rights Reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -25,7 +25,7 @@ use \Joomla\CMS\Image\Image;
 final class Resizefix extends MediaActionPlugin {
 
     /**
-     * The save event.
+     * This event fires before content is saved.
      *
      * @param   string   $context  The context
      * @param   object   $item     The item
@@ -36,7 +36,7 @@ final class Resizefix extends MediaActionPlugin {
      *
      * @since   4.0.0
      */
-    public function onContentBeforeSave($context, $item, $isNew, $data = [])
+    public function onContentBeforeSave($context, $item, $isNew, $data = []):void
     {
         if ($context != 'com_media.file') {
             return;
